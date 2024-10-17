@@ -337,14 +337,11 @@ header {
     padding-bottom: 20px;
   }
 
-  .teks > p:nth-child(4) {
+  .teks-user {
     padding: 8px;
     text-align: center;
     font-family: "Poppins";
     font-weight: 800;
-  }
-
-  .teks > p:nth-child(5) {
     text-align: center;
     padding-bottom: 50px;
   }
@@ -355,8 +352,8 @@ header {
     align-items: center;
   }
 
-  .testimoni .teks .img-testimoni > img {
-    width: 20%;
+  .testimoni .teks .about-user .img-testimoni > img {
+    width: 30%;
     border-radius: 50px;
   }
 
@@ -461,6 +458,7 @@ header {
     }
     .section-hero {
         flex-direction: row;
+        align-items: center;
         gap: 30px;
     }
 
@@ -471,11 +469,22 @@ header {
     .section-hero .teks1 > p {
         text-align: left;
     }
+
+    .section-hero .teks1 .btn {
+      text-align: left;
+      display: flex;
+      justify-content: left;
+    }
+
+    .section-hero .teks1 {
+        width: 50%;
+    }
+
     .img-hero {
         width: 50%;
     }
     .img-hero > img{
-        width: 100%;
+        width: 80%;
     }
     .teks1 {
         width: 50%;
@@ -512,12 +521,30 @@ header {
         text-align: left;
     }
 
-
-    .testimoni .teks .img-testimoni {
-        justify-content: left;
-    }
-
     .testimoni .teks {
         width: 45%;
+    }
+
+    .testimoni .teks .about-user {
+      display: flex;
+    }
+
+    .testimoni .teks .about-user .img-testimoni {
+      width: 20%;
+      display: flex;
+      justify-content: left;
+    }
+
+    .testimoni .teks .about-user .img-testimoni > img {
+      width: 70%;
+    }
+
+    .testimoni .teks .about-user .teks-user {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      text-align: left;
     }
  }
